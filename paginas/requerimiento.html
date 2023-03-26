@@ -8,7 +8,7 @@
 
   <meta name="keywords" content="agencia digital, marketing digital, campañas redes sociales">
 
-  <title>Benkio Digital - Contáctanos</title>
+  <title>Benkio Digital - Solicitud</title>
 
   <meta name="description" content ="somos una agencia de marketing digital con 20 años de experiencia en el mercado. Especialistas en campañas digitales" />
 
@@ -24,15 +24,10 @@
 
   <link rel="stylesheet" href="../recursos/css/theme.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.min.css" integrity="sha512-cyIcYOviYhF0bHIhzXWJQ/7xnaBuIIOecYoPZBgJHQKFPo+TOBA+BY1EnTpmM8yKDU4ZdI3UGccNGCEUdfbBqw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.all.min.js" integrity="sha512-IZ95TbsPTDl3eT5GwqTJH/14xZ2feLEGJRbII6bRKtE/HC6x3N4cHye7yyikadgAsuiddCY2+6gMntpVHL1gHw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
 </head>
 <body>
 
-  
+
   <div class="back-to-top"></div>
 
   <header>
@@ -60,7 +55,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-        <a href="../index.html" class="navbar-brand">Benkio - Negocios Digitales</a>
+        <a href="index.html" class="navbar-brand">Benkio - Negocios Digitales</a>
 
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -71,7 +66,7 @@
             <li class="nav-item">
               <a href="../index.html" class="nav-link">Inicio</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a href="./nosotros.html" class="nav-link">Nosotros</a>
             </li>
             <li class="nav-item">
@@ -83,7 +78,7 @@
             <li class="nav-item">
               <a href="./cursos.html" class="nav-link">Cursos</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a href="./contacto.html" class="nav-link">Contacto</a>
             </li>
             <li class="nav-item">
@@ -101,52 +96,99 @@
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb breadcrumb-dark bg-transparent justify-content-center py-0">
                 <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+                <li class="breadcrumb-item active" aria-current="page">Requerimiento</li>
               </ol>
             </nav>
-            <h1 class="fg-white text-center">Contacto</h1>
+            <h1 class="fg-white text-center">Deja tú requerimiento </h1>
           </div>
         </div>
       </div>
-    </div>
+    </div> 
   </header>
 
   <main>
-    <div class="page-section">
+
+
+    <div class="page-section" id="caja">
       <div class="container">
-        <div class="text-center">
-          <h2 class="title-section mb-3">Contáctanos</h2>
-          <p>Cuéntanos cómo podemos ayudarte, tambíen puedes enviarnos un mail a <a href="mailto:example@mail.com">rgaraym@benkio.pe</a></p>
-        </div>
-        <div class="row justify-content-center mt-5">
-          <div class="col-lg-8">
-            <form action="#" class="form-contact" id="form">
-              <div class="row">
-                <div class="col-sm-6 py-2">
-                  <label for="name" class="fg-grey" id="nombre_formulario">Nombre</label>
-                  <input type="text" class="form-control" id="name" placeholder="Nombre" name="name" required>
-                </div>
-                <div class="col-sm-6 py-2">
-                  <label for="email" class="fg-grey" id="correo_formulario">Email</label>
-                  <input type="text" class="form-control" id="email" placeholder="Email" name="email" required>
-                </div>
-                <div class="col-12 py-2">
-                  <label for="subject" class="fg-grey" id="asunto_formulario">Asunto</label>
-                  <input type="text" class="form-control" id="subject" placeholder="Asunto" name="subject" required>
-                </div>
-                <div class="col-12 py-2">
-                  <label for="message" class="fg-grey" id="mensaje_formulario">Mensaje</label>
-                  <textarea id="message" rows="8" class="form-control" placeholder="Mensaje" name="message" required></textarea>
-                </div>
-                <div class="col-12 mt-3">
-                  <input type="submit" class="btn btn-primary px-5" id="boton_formulario" value="ENVIAR">
-                </div>
-              </div>
-            </form>
+        <div class="row align-items-center">
+          <div class="col-lg-6 py-3">
+            
+            <h1>Requerimiento</h1>
+            Ingresa tu requirimiento Aquí
+            <br>
+           <button onclick="requerimiento()">Iniciar</button>
+           
+           <button onclick="lideres()">Ver lideres de equipos asignados</button>
+            
+           <ul id="myList"></ul>
+          </div>
+          <div class="col-lg-6 py-3">
+            <div class="about-img">
+              <img src="../recursos/img/login.jpg" alt="">
+            </div>
           </div>
         </div>
       </div> 
+    </div>
+    <div class="page-section">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="title-section">El equipo resolverá pronto tú requerimiento</h2>
+        </div>
 
+        <div class="owl-carousel team-carousel mt-5">
+          <div class="team-wrap">
+            <div class="team-profile">
+              <img src="../recursos/img/Equipo/rgaraym.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h5>Ruben Garay</h5>
+              <div class="text-sm fg-grey">CEO</div>
+
+              <div class="social-button">
+                <a href=""><span class="mai-logo-facebook-messenger"></span></a>
+                <a href=""><span class="mai-call"></span></a>
+                <a href=""><span class="mai-mail"></span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-wrap">
+            <div class="team-profile">
+              <img src="../recursos/img/Equipo/cevanan.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h5>Claudia Evanan</h5>
+              <div class="text-sm fg-grey">CTO</div>
+
+              <div class="social-button">
+                <a href=""><span class="mai-logo-facebook-messenger"></span></a>
+                <a href=""><span class="mai-call"></span></a>
+                <a href=""><span class="mai-mail"></span></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="team-wrap">
+            <div class="team-profile">
+              <img src="../recursos/img/Equipo/sgaray.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h5>Monica Paniagua</h5>
+              <div class="text-sm fg-grey">CTO</div>
+
+              <div class="social-button">
+                <a href=""><span class="mai-logo-facebook-messenger"></span></a>
+                <a href=""><span class="mai-call"></span></a>
+                <a href=""><span class="mai-mail"></span></a>
+              </div>
+            </div>
+          </div>
+
+ 
+  </main>
 
   <footer class="page-footer">
     <div class="container">
@@ -207,12 +249,7 @@
 
 <script src="../recursos/js/theme.js"></script>
 
-<script src="../recursos/js/formulario.js"></script>
-
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-<script type="text/javascript"> emailjs.init('MH3Rz_tBwoHG53pwY') </script>
+<script src="../recursos/js/entregafinal.js"></script>
 
 </body>
 </html>

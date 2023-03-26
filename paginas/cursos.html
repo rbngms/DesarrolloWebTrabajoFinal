@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
 
   <meta name="keywords" content="agencia digital, marketing digital, campañas redes sociales">
 
-  <title>Benkio Digital - Contáctanos</title>
+  <title>Benkio Digital - Nosotros</title>
 
   <meta name="description" content ="somos una agencia de marketing digital con 20 años de experiencia en el mercado. Especialistas en campañas digitales" />
 
@@ -24,15 +24,12 @@
 
   <link rel="stylesheet" href="../recursos/css/theme.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.min.css" integrity="sha512-cyIcYOviYhF0bHIhzXWJQ/7xnaBuIIOecYoPZBgJHQKFPo+TOBA+BY1EnTpmM8yKDU4ZdI3UGccNGCEUdfbBqw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.all.min.js" integrity="sha512-IZ95TbsPTDl3eT5GwqTJH/14xZ2feLEGJRbII6bRKtE/HC6x3N4cHye7yyikadgAsuiddCY2+6gMntpVHL1gHw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+  <link rel="stylesheet" href="../recursos/css/styles.css" />
 
 </head>
 <body>
 
-  
+
   <div class="back-to-top"></div>
 
   <header>
@@ -60,7 +57,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-        <a href="../index.html" class="navbar-brand">Benkio - Negocios Digitales</a>
+        <a href="index.html" class="navbar-brand">Benkio - Negocios Digitales</a>
 
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -80,10 +77,10 @@
             <li class="nav-item">
               <a href="./portafolio.html" class="nav-link">Proyectos</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a href="./cursos.html" class="nav-link">Cursos</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a href="./contacto.html" class="nav-link">Contacto</a>
             </li>
             <li class="nav-item">
@@ -101,52 +98,75 @@
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb breadcrumb-dark bg-transparent justify-content-center py-0">
                 <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+                <li class="breadcrumb-item active" aria-current="page">Cursos</li>
               </ol>
             </nav>
-            <h1 class="fg-white text-center">Contacto</h1>
+            <h1 class="fg-white text-center">Cursos</h1>
           </div>
         </div>
       </div>
-    </div>
+    </div> 
   </header>
 
   <main>
-    <div class="page-section">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="title-section mb-3">Contáctanos</h2>
-          <p>Cuéntanos cómo podemos ayudarte, tambíen puedes enviarnos un mail a <a href="mailto:example@mail.com">rgaraym@benkio.pe</a></p>
-        </div>
-        <div class="row justify-content-center mt-5">
-          <div class="col-lg-8">
-            <form action="#" class="form-contact" id="form">
-              <div class="row">
-                <div class="col-sm-6 py-2">
-                  <label for="name" class="fg-grey" id="nombre_formulario">Nombre</label>
-                  <input type="text" class="form-control" id="name" placeholder="Nombre" name="name" required>
-                </div>
-                <div class="col-sm-6 py-2">
-                  <label for="email" class="fg-grey" id="correo_formulario">Email</label>
-                  <input type="text" class="form-control" id="email" placeholder="Email" name="email" required>
-                </div>
-                <div class="col-12 py-2">
-                  <label for="subject" class="fg-grey" id="asunto_formulario">Asunto</label>
-                  <input type="text" class="form-control" id="subject" placeholder="Asunto" name="subject" required>
-                </div>
-                <div class="col-12 py-2">
-                  <label for="message" class="fg-grey" id="mensaje_formulario">Mensaje</label>
-                  <textarea id="message" rows="8" class="form-control" placeholder="Mensaje" name="message" required></textarea>
-                </div>
-                <div class="col-12 mt-3">
-                  <input type="submit" class="btn btn-primary px-5" id="boton_formulario" value="ENVIAR">
-                </div>
+   
+    <section class="container content-section">
+      <h2 class="section-header">Cursos disponibles</h2>
+      <div class="shop-items">
+          <div class="shop-item">
+              <span class="shop-item-title">Facebook Ads</span>
+              <img class="shop-item-image" src="../recursos/img/cursos/facebook_ads.png">
+              <div class="shop-item-details">
+                  <span class="shop-item-price">S/299.90</span>
+                  <button class="btn btn-primary shop-item-button" type="button">Agregar al carrito</button>
               </div>
-            </form>
           </div>
-        </div>
-      </div> 
+          <div class="shop-item">
+              <span class="shop-item-title">Google Ads</span>
+              <img class="shop-item-image" src="../recursos/img/cursos/google_ads.png">
+              <div class="shop-item-details">
+                  <span class="shop-item-price">S/299.90</span>
+                  <button class="btn btn-primary shop-item-button"type="button">Agregar al carrito</button>
+              </div>
+          </div>
+          <div class="shop-item">
+              <span class="shop-item-title">Google Analytics</span>
+              <img class="shop-item-image" src="../recursos/img/cursos/1google_analytics.png">
+              <div class="shop-item-details">
+                  <span class="shop-item-price">S/299.90</span>
+                  <button class="btn btn-primary shop-item-button" type="button">Agregar al carrito</button>
+              </div>
+          </div>
+          <div class="shop-item">
+              <span class="shop-item-title">Marketing Digital</span>
+              <img class="shop-item-image" src="../recursos/img/cursos/marketing_digital.jpg">
+              <div class="shop-item-details">
+                  <span class="shop-item-price">S/999.90</span>
+                  <button class="btn btn-primary shop-item-button" type="button">Agregar al carrito</button>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  <section class="container content-section">
+      <h2 class="section-header">Carrito</h2>
+      <div class="cart-row">
+          <span class="cart-item cart-header cart-column">Curso</span>
+          <span class="cart-price cart-header cart-column">Precio</span>
+          <span class="cart-quantity cart-header cart-column">Cantidad</span>
+      </div>
+      <div class="cart-items">
+      </div>
+      <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">S/0</span>
+      </div>
+      <button class="btn btn-primary btn-purchase" type="button">Comprar</button>
+  </section>
 
+
+
+  </main>
 
   <footer class="page-footer">
     <div class="container">
@@ -207,12 +227,8 @@
 
 <script src="../recursos/js/theme.js"></script>
 
-<script src="../recursos/js/formulario.js"></script>
+<script src="../recursos/js/cursos.js"></script>
 
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-<script type="text/javascript"> emailjs.init('MH3Rz_tBwoHG53pwY') </script>
 
 </body>
 </html>
